@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APGPA Interactive Visualizations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .category {
+            margin-bottom: 2rem;
+        }
+        
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c2c2c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .link-card {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1rem;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            border-color: #4a4a4a;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8e9ea 100%);
+        }
+        
+        .link-title {
+            font-weight: 500;
+            color: #2c2c2c;
+            margin-bottom: 0.3rem;
+        }
+        
+        .link-description {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>APGPA Repository</h1>
+            <p class="subtitle">Interactive Visualizations for Environmental and Health Data</p>
+        </header>
+        
+        <div class="content">
+            <div class="category">
+                <h2 class="category-title">Perceived Stress</h2>
+                <div class="links-grid">
+                    <a href="Interactive_HTML/perceived-stress_pm25_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × PM<sub>2.5</sub></div>
+                        <div class="link-description">The treatment effect of PM<sub>2.5</sub> exposure on perceived stress</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-stress_greenspace_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × Greenspace</div>
+                        <div class="link-description">The treatment effect of greenspace exposure on perceived stress</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-stress_lpa_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × LPA</div>
+                        <div class="link-description">The treatment effect of light physical activity (LPA) on perceived stress</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-stress_mvpa_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × MVPA</div>
+                        <div class="link-description">The treatment effect of moderate-to-vigorous physical activity (MVPA) on perceived stress</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-stress_perceived-air_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × Perceived air pollution</div>
+                        <div class="link-description">The treatment effect of perceived air pollution on perceived stress</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-stress_perceived-green_interactive.html" class="link-card">
+                        <div class="link-title">Perceived stress × Perceived greenspace</div>
+                        <div class="link-description">The treatment effect of perceived greenspace on perceived stress</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="category-title">Physical Activity</h2>
+                <div class="links-grid">
+                    <a href="Interactive_HTML/lpa_pm25_interactive.html" class="link-card">
+                        <div class="link-title">LPA × PM<sub>2.5</sub></div>
+                        <div class="link-description">The treatment effect of PM<sub>2.5</sub> exposure on light physical activity (LPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/lpa_greenspace_interactive.html" class="link-card">
+                        <div class="link-title">LPA × Greenspace</div>
+                        <div class="link-description">The treatment effect of greenspace exposure on light physical activity (LPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/lpa_perceived-air_interactive.html" class="link-card">
+                        <div class="link-title">LPA × Perceived air pollution</div>
+                        <div class="link-description">The treatment effect of perceived air pollution on light physical activity (LPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/lpa_perceived-green_interactive.html" class="link-card">
+                        <div class="link-title">LPA × Perceived greenspace</div>
+                        <div class="link-description">The treatment effect of perceived greenspace on light physical activity (LPA)</div>
+                    </a>
+
+                    <a href="Interactive_HTML/mvpa_pm25_interactive.html" class="link-card">
+                        <div class="link-title">MVPA × PM<sub>2.5</sub></div>
+                        <div class="link-description">The treatment effect of PM<sub>2.5</sub> exposure on moderate-to-vigorous physical activity (MVPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/mvpa_greenspace_interactive.html" class="link-card">
+                        <div class="link-title">MVPA × Greenspace</div>
+                        <div class="link-description">The treatment effect of greenspace exposure on moderate-to-vigorous physical activity (MVPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/mvpa_perceived-air_interactive.html" class="link-card">
+                        <div class="link-title">MVPA × Perceived air pollution</div>
+                        <div class="link-description">The treatment effect of perceived air pollution on moderate-to-vigorous physical activity (MVPA)</div>
+                    </a>
+                    <a href="Interactive_HTML/mvpa_perceived-green_interactive.html" class="link-card">
+                        <div class="link-title">MVPA × Perceived greenspace</div>
+                        <div class="link-description">The treatment effect of perceived greenspace on moderate-to-vigorous physical activity (MVPA)</div>
+                    </a>
+
+                </div>
+            </div>
+            
+            <div class="category">
+                <h2 class="category-title">Environmental Factors</h2>
+                <div class="links-grid">
+                    <a href="Interactive_HTML/perceived-air_pm25_interactive.html" class="link-card">
+                        <div class="link-title">Perceived air pollution × PM<sub>2.5</sub></div>
+                        <div class="link-description">The treatment effect of PM<sub>2.5</sub> exposure on perceived air pollution</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-air_perceived-green_interactive.html" class="link-card">
+                        <div class="link-title">Perceived air pollution × Perceived greenspace</div>
+                        <div class="link-description">The treatment effect of perceived greenspace on perceived air pollution</div>
+                    </a>
+                    <a href="Interactive_HTML/perceived-green_greenspace_interactive.html" class="link-card">
+                        <div class="link-title">Perceived greenspace × Greenspace</div>
+                        <div class="link-description">The treatment effect of greenspace exposure on perceived greenspace</div>
+                    </a>
+                    <a href="Interactive_HTML/pm25_greenspace_interactive.html" class="link-card">
+                        <div class="link-title">PM<sub>2.5</sub> × Greenspace</div>
+                        <div class="link-description">The treatment effect of greenspace exposure on PM<sub>2.5</sub> exposure</div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p>APGPA Interactive Visualizations © 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
